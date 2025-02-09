@@ -14,10 +14,10 @@ import java.util.List;
  * A concrete class that represents any grouping of cards for a Game. HINT, you might want to subclass this more than
  * once. The group of cards has a maximum size attribute which is flexible for reuse.
  *
- * @author Omkumar Dalsaniya
- * @author Archi Ramoliya
- * @author Rutvi Panchal
- * @author Nirali Patel
+ * @author Omkumar Dalsaniya 02-09-2025
+ * @author Archi Ramoliya    02-09-2025
+ * @author Rutvi Panchal     02-09-2025
+ * @author Nirali Patel      02-09-2025
  */
 public class Deck {
 private List<Card> cards;

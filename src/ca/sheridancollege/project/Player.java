@@ -10,10 +10,10 @@ import java.util.List;
 
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
- * @author Omkumar Dalsaniya
- * @author Archi Ramoliya
- * @author Rutvi Panchal
- * @author Nirali Patel
+ * @author Omkumar Dalsaniya 02-09-2025
+ * @author Archi Ramoliya    02-09-2025
+ * @author Rutvi Panchal     02-09-2025
+ * @author Nirali Patel      02-09-2025
  */
 public class Player {
     private List<Card> hand;

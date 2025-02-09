@@ -8,12 +8,12 @@ package ca.sheridancollege.project;
 /**
  * A class to be used as the base Card class for the project. Must be general enough to be instantiated for any Card
  * game. Students wishing to add to the code should remember to add themselves as a modifier.
- * @author Omkumar Dalsaniya
- * @author Archi Ramoliya
- * @author Rutvi Panchal
- * @author Nirali Patel
+ * @author Omkumar Dalsaniya 02-09-2025
+ * @author Archi Ramoliya    02-09-2025
+ * @author Rutvi Panchal     02-09-2025
+ * @author Nirali Patel      02-09-2025
  */
-public abstract class Card {
+public class Card {
     //default modifier for child classes
 
     /**
@@ -21,7 +21,24 @@ public abstract class Card {
      *
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
-    @Override
-    public abstract String toString();
+    private String suit;
+    private String rank;
 
+    public Card(String suit, String rank) {
+        this.suit = suit;
+        this.rank = rank;
+    }
+
+    public String getSuit() {
+        return suit;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+
+    @Override
+    public String toString() {
+        return rank + " of " + suit;
+    }
 }
