@@ -42,5 +42,5 @@ public class Player {
 
     public void clearHand() {
         hand.clear();
-}
+    }
 }
