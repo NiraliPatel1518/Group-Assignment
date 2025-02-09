@@ -44,6 +44,6 @@ private List<Card> cards;
 
     public int size() {
         return cards.size();
-}
+    }
 }
    //end class
