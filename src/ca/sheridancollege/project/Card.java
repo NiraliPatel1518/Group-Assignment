@@ -13,6 +13,7 @@ package ca.sheridancollege.project;
  * @author Rutvi Panchal     02-09-2025
  * @author Nirali Patel      02-09-2025
  */
+// Constructor to initialize a card with a suit and rank
 public class Card {
     //default modifier for child classes
 
@@ -37,8 +38,9 @@ public class Card {
         return rank;
     }
 
+    // Returns the String Representation of the card
     @Override
-    public String toString() {
+    public String toString() {    
         return rank + " of " + suit;
     }
 }
