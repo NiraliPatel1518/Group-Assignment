@@ -22,6 +22,7 @@ public class Player {
         hand = new ArrayList<>();
     }
 
+    // Add a card to the player's hand
     public void addCard(Card card) {
         hand.add(card);
     }
