@@ -1,21 +1,16 @@
-/**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ca.sheridancollege.project;
-
-import java.util.Scanner;
+/*
+ * @author Omkumar Dalsaniya 04-07-2025
+ * @author Archi Ramoliya    04-07-2025
+ * @author Rutvi Panchal     04-07-2025
+ * @author Nirali Patel      04-07-2025
+*/
 import java.util.Random;
-
-/**
- * The class that models your game. You should create a more specific child of this class and instantiate the methods
- * given.
- * @author Omkumar Dalsaniya  02-09-2025
- * @author Archi Ramoliya     02-09-2025
- * @author Rutvi Panchal      02-09-2025
- * @author Nirali Patel       02-09-2025
- */
+import java.util.Scanner;
 
 public class Game {
     private Deck deck;
@@ -32,7 +27,7 @@ public class Game {
             players[i] = new Player();
         }
         dealCards();
-        setTrumpSuit();// For simplicity, set trump suit to Hearts
+        setTrumpSuit();
         trickWinner = 0;
         currentPlayerIndex = 0;
     }
@@ -45,10 +40,10 @@ public class Game {
         }
     }
 
-     public void setTrumpSuit() {
+    public void setTrumpSuit() {
         String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
         Random random = new Random();
-        this.trumpSuit = suits[random.nextInt(suits.length)];
+        trumpSuit = suits[random.nextInt(suits.length)];
         System.out.println("Trump suit set to: " + trumpSuit);
     }
 
